@@ -1,0 +1,17 @@
+name: Deploy to Server
+on:
+  push:
+    branches: [ master ]  # 只在 master 分支 push 时触发
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Add SSH Key
+    uses: webfactory/ssh-agent@v0.7.0
+    with:
+      ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+  - name: Deploy to Server
+    run: |
+      ssh -o StrictHostKeyChecking=no root@8.138.189.239 'cd /var/www/html && git pull origin master'
+
