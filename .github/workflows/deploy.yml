@@ -2,7 +2,7 @@ name: Deploy to Server
 on:
   push:
     branches: [ master ]  # 只在 master 分支 push 时触发
-  jobs:
+jobs:
     deploy:
       runs-on: ubuntu-latest
       steps:
