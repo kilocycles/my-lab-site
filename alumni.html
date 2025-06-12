@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alumni</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .alumni-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .alumni-card {
+      width: 180px;
+      cursor: pointer;
+    }
+
+    .alumni-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ccc;
+      transition: transform 0.3s;
+    }
+
+    .alumni-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .alumni-name {
+      font-weight: bold;
+      margin-top: 12px;
+      font-size: 18px;
+    }
+
+    .alumni-title {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .bio-popup {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .bio-popup p {
+      margin-top: 10px;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background: #444;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Alumni</h1>
+
+  <div class="alumni-container">
+    <div class="alumni-card" >
+        <a href="people/lijiale.html"><img src="people/tupian/lijiale.jpg" alt="Jiale Li"></a>
+     
+      <div class="alumni-name">Jiale Li</div>
+      <div class="alumni-title">Master candidate</div>
+    </div>
+
+    <div class="alumni-card" >
+        <a href="people/hejianhe.html"> <img src="people/tupian/hejianhe.jpg" alt="Jianhe He"></a>
+     
+      <div class="alumni-name">Jianhe He</div>
+      <div class="alumni-title">Master candidate</div>
+    </div>
+
+    <!-- 可以继续添加更多校友 -->
+  </div>
+
+  <!-- 弹窗介绍 -->
+  <div class="overlay" onclick="hideBio()"></div>
+  <div class="bio-popup" id="bioPopup">
+    <h2 id="bioName"></h2>
+    <p id="bioText"></p>
+  </div>
+
+  <a href="home.html" class="back-button">← 返回首页</a>
+
+  <script>
+    function showBio(name, text) {
+      document.getElementById('bioName').textContent = name;
+      document.getElementById('bioText').textContent = text;
+      document.querySelector('.overlay').style.display = 'block';
+      document.getElementById('bioPopup').style.display = 'block';
+    }
+
+    function hideBio() {
+      document.querySelector('.overlay').style.display = 'none';
+      document.getElementById('bioPopup').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
