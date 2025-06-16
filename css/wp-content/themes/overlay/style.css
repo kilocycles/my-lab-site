@@ -1205,6 +1205,7 @@ body.show-floating-sidebar .floating-sidebar-control::before {
 .site-title {
 	margin: 0;
 	padding: 0;
+
 }
 .site-description {
 	margin: 0;
@@ -1216,6 +1217,7 @@ body.show-floating-sidebar .floating-sidebar-control::before {
 .site-logo-align-inner {
 	display: flex;
 	align-items: center;
+
 }
 .align-items-top .site-logo-align-inner {
 	align-items: flex-start;

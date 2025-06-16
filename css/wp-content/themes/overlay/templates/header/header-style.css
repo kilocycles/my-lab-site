@@ -17,6 +17,7 @@
 .site-title {
     font-size: 56px;
     line-height: 1.2;
+ 
 }
 .site-description {
     font-size: 14px;
@@ -48,6 +49,7 @@
 .site-stick-header.stick-header.stuck .site-header-inner .site-title {
     line-height: 1;
     font-size: 40px;
+ 
 }
 .site-stick-header.stick-header.stuck .site-stick-inner {
     max-width: 1200px;
