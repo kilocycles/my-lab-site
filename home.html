@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<title> Water CHARM Research Lab &#8211;  </title>
+	<title> Water CHaRM Research Lab &#8211;  </title>
 <meta name='robots' content='noindex, nofollow' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel="alternate" type="application/rss+xml" title=" Water CHARM Research Lab &raquo; Feed" href="https://florence-group.cn/feed/" />
-<link rel="alternate" type="application/rss+xml" title=" Water CHARM Research Lab&raquo; 评论 Feed" href="https://florence-groupcn/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" Water CHaRM Research Lab &raquo; Feed" href="https://florence-group.cn/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" Water CHaRM Research Lab&raquo; 评论 Feed" href="https://florence-groupcn/comments/feed/" />
 <script type="text/javascript">
 /* <![CDATA[ */
 
@@ -64,6 +64,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     font-family:Georgia,Times,"Times New Roman",serif;
     color: #666666;
   }
+  .centered-text {
+    color:  #2866a4; /* 设置文字为蓝色 */
+    text-align: center; /* 设置文字居中 */
+    font-size: 24px; /* 可选：调整字体大小，按需要修改 */
+    font-weight: bold; /* 设置文字加粗 */
+}
 </style>
 
 
@@ -167,6 +173,34 @@ a.custom-logo-link{max-width:120px;}.site-title{margin-bottom:12px;font-size:26p
 <link rel="alternate" type="text/xml+oembed" href="https://florence-group.cn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fflorence-group.cn%2F&#038;format=xml" />
 
 <style></style>
+<style>
+  .CHaRM-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.CHaRM-tooltip::after {
+    content: "Contaminants Hazards and Risk Mitigation";
+    position: absolute;
+    background-color: transparent;
+    color: #2866a4
+    text-align: center;
+    white-space: nowrap; /* 防止换行，使文本横向排列 */
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 1;
+    bottom: 10%;
+    left: 100%;
+    margin-left: 30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.CHaRM-tooltip:hover::after {
+    opacity: 1;
+}
+</style>
     
     <!-- Analytics by WP-Statistics v13.0.8 - https://wp-statistics.com/ -->
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
@@ -327,14 +361,14 @@ body {
                 <div class="site-branding align-items-middle">
                     <div class="site-logo-align">                        
                         <div class="site-logo-align-inner">                            
-                                                            <!-- <a href="css/wp-content/uploads/tsinghualogo/微信图片_20250420175507.png" class="custom-logo" alt="Water CHARM Research Lab" decoding="async" /></a> -->
-                                                            <!-- <a href="https://www.watercharm.group/" class="custom-logo-link" rel="home" aria-current="page"><img width="200px" height="auto" src="css/wp-content/uploads/tsinghualogo/微信图片_20250701171031.png" class="custom-logo" alt="Water CHARM Research Lab" decoding="async" /></a> -->
+                                                            <!-- <a href="css/wp-content/uploads/tsinghualogo/微信图片_20250420175507.png" class="custom-logo" alt="Water CHaRM Research Lab" decoding="async" /></a> -->
+                                                            <!-- <a href="https://www.waterCHaRM.group/" class="custom-logo-link" rel="home" aria-current="page"><img width="200px" height="auto" src="css/wp-content/uploads/tsinghualogo/微信图片_20250701171031.png" class="custom-logo" alt="Water CHaRM Research Lab" decoding="async" /></a> -->
                                                             <!-- <img src="css/wp-content/uploads/tsinghualogo/微信图片_20250701171031.png"
                                                             alt="Lab logo"
                                                             style="width: 150px; height: auto; margin-right: 15px;" /> -->
-                                                            <a href="https://www.watercharm.group/" class="custom-logo-link" rel="home"><img width="180" height="183" src="css/wp-content/uploads/tsinghualogo/微信图片_20250420175507.png" class="custom-logo" alt="Water CHARM Research Lab" decoding="async" /></a>
+                                                            <a href="https://www.waterCHaRM.group/" class="custom-logo-link" rel="home"><img width="180" height="183" src="css/wp-content/uploads/tsinghualogo/微信图片_20250420175507.png" class="custom-logo" alt="Water CHaRM Research Lab" decoding="async" /></a>
                                                             <div class="site-logo-title">
-                                                                                    <p class="site-title"><a href="https://www.watercharm.group/" rel="home"> Water CHARM Research Lab </a></p>                                                                                                                                                                            <p class="site-description"> 水环境安全与健康研究实验室</p>         
+                                                                                    <p class="site-title"><a href="https://www.waterCHaRM.group/" rel="home"> Water  <span class="CHaRM-tooltip">CHaRM</span> Research Lab   </a></p>                                                                                                                                                                            <p class="site-description"> 水环境安全与健康研究实验室</p>         
                                                                                     <!-- <img src="css/wp-content/uploads/tsinghualogo/微信图片_20250701171031.png" 
                                                                                     alt="Lab banner" 
                                                                                     style="width: 100%; max-width:150px; height: auto; margin-top: 5px;" /> -->
@@ -350,16 +384,16 @@ body {
                                                                         Menu                                </button>
                                 <div class="menu-main-menu-container">
                                     <div class="main-menu-inner"><ul id="overlay-main-menu" class="menu"><li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-54 current_page_item menu-item-168"><a href="https://florence-group.cn/" aria-current="page"><div align="center">主页<br>Home</div></a></li>
-<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="https://www.watercharm.group//new.html"><div align="center">动态<br>News</div></a></li>
-<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://www.watercharm.group//research.html"><div align="center">研究方向<br>Research</div></a></li>
-<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19"><a href="https://www.watercharm.group//people.html"><div align="center">课题组成员<br>People</div></a>
+<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="https://www.waterCHaRM.group//new.html"><div align="center">动态<br>News</div></a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://www.waterCHaRM.group//research.html"><div align="center">研究方向<br>Research</div></a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19"><a href="https://www.waterCHaRM.group//people.html"><div align="center">课题组成员<br>People</div></a>
 <ul class="sub-menu">
-	<li id="menu-item-1127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127"><a href="https://www.watercharm.group//alumni.html">Alumni</a></li>
+	<li id="menu-item-1127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127"><a href="https://www.waterCHaRM.group//alumni.html">Alumni</a></li>
 </ul>
 </li>
-<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://www.watercharm.group//publications.html"><div align="center">发表论文<br>Publications</div></a></li>
-<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="https://www.watercharm.group//positions.html"><div align="center">学科活动<br>Activities</div></a></li>
-<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://www.watercharm.group//contact.html"><div align="center">联系方式<br>Contact</div></a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://www.waterCHaRM.group//publications.html"><div align="center">发表论文<br>Publications</div></a></li>
+<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="https://www.waterCHaRM.group//positions.html"><div align="center">学科活动<br>Activities</div></a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://www.waterCHaRM.group//contact.html"><div align="center">联系方式<br>Contact</div></a></li>
 </ul></div>                                    <button class="main-menu-close"></button>
                                 </div>
                             </div>
@@ -412,6 +446,8 @@ body {
 <div style="display: flex; align-items: flex-start; gap: 30px;">
   <!-- 左边是文字部分 -->
   <div style="flex: 1;">
+   
+    <p class="centered-text">Water CHaRM（Contaminants Hazards and Risk Mitigation）</p>
     <p>
       Our research is dedicated to addressing critical water pollution challenges and their impacts on both human communities and ecosystem health.
       With a <strong>One Health</strong> perspective, we investigate the fate and control of waterborne emerging contaminants, including:
